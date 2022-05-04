@@ -1,0 +1,7 @@
+{
+  "name": "Baby Stimulation: High Contrast Images",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
