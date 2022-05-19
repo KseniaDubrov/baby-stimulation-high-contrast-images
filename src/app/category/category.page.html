@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-label>Reverse Color</ion-label>
+      <ion-toggle
+        [(ngModel)]="isClassToggled"
+        (ionChange)="changeClass()"
+      ></ion-toggle>
+    </ion-title>
+    <ion-label>Play Sound</ion-label>
+    <ion-toggle
+      [(ngModel)]="isSoundToggled"
+      (ionChange)="toggleSound()"
+    ></ion-toggle>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <swiper
+    [autoplay]="true"
+    [keyboard]="true"
+    [pagination]="true"
+    [scrollbar]="true"
+    [zoom]="true"
+  >
+    <ng-template
+      swiperSlide
+      *ngFor="let image of galleryService.gallery | galleryfilter:filterArg"
+      ><ion-img [src]="image.icon" [ngClass]="this.class"></ion-img
+    ></ng-template>
+  </swiper>
+</ion-content>

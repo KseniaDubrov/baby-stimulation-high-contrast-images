@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Select Sound</ion-label>
+    <ion-select (ionChange)="soundChangeHandler()">
+      <ion-select-option value="piano">Piano</ion-select-option>
+      <ion-select-option value="birthday">Happy Birthday</ion-select-option>
+      <ion-select-option value="black">Black</ion-select-option>
+      <ion-select-option value="red">Red</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>

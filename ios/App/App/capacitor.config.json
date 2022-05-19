@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.baby",
+	"appName": "Baby Stimulation: High Contrast Images",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
